@@ -1,2 +1,2 @@
 # gen-ai-chat
-Generative AI chat application like google gemini using  google's free API.
+Generative AI chat application like google gemini or chatGPT using  google's free API

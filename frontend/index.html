@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenAI Chatbot SaaS</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons for premium visual styles -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Marked.js library for clean engine parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+    <!-- Sidebar Mobile Toggle (Hidden on Desktop) -->
+    <button class="mobile-toggle" id="menuToggle" aria-label="Toggle Navigation">
+        <i data-lucide="menu"></i>
+    </button>
+
+    <!-- Sidebar Layout -->
+    <aside class="sidebar" id="sidebar">
+        <div class="logo">
+            <div class="logo-icon">🤖</div>
+            <h2>GenAI chat</h2>
+        </div>
+        
+        <button class="new-chat" id="newChatBtn">
+            <i data-lucide="plus"></i> New Chat
+        </button>
+
+        <!-- Sidebar History Wrapper -->
+        <div class="history">
+            <h3>Recent Chats</h3>
+            <ul>
+                <li>Building a SaaS product</li>
+                <li>Python UI/UX practices</li>
+                <li>Debugging CSS flexbox</li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Main Content Container -->
+    <main class="main">
+        
+        <header class="header">
+            <div>
+                <h1>Dashboard</h1>
+                <p>Welcome back! Let's build something today.</p>
+            </div>
+            <button id="themeBtn" aria-label="Toggle Theme">
+                <i data-lucide="sun" class="sun-icon"></i>
+                <i data-lucide="moon" class="moon-icon"></i>
+            </button>
+        </header>
+
+        <!-- Chat Workspace Area -->
+        <div class="chat-container">
+            <!-- Starter Template View -->
+            <div class="welcome-message" id="welcomeMessage">
+                <h2>How can I help you today?</h2>
+                <p>Ask me anything from coding to creative writing.</p>
+            </div>
+
+            <!-- Dynamic Chat Workspace (Set to display: none initially via styling rules) -->
+            <div class="chat-feed" id="chatFeed"></div>
+
+            <!-- Interactive Search Module with Voice Capture -->
+            <div class="input-area">
+                <input type="text" id="userInput" placeholder="Type your message here...">
+                <div class="input-actions">
+                    <button id="voiceBtn" aria-label="Start Voice Dictation">
+                        <i data-lucide="mic" id="micIcon"></i>
+                    </button>
+                    <button id="sendBtn" aria-label="Send Message">
+                        <i data-lucide="send-horizontal"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 GenAI Chatbot SaaS by Jay Raj Bhatta.
+        </footer>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

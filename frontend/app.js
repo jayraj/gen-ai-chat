@@ -75,7 +75,7 @@ async function handleSendMessage() {
     chatFeed.scrollTop = chatFeed.scrollHeight;
 
     try {
-        const response = await fetch('http://127.0.0.1:8000/api/chat', {
+        const response = await fetch('https://gen-ai-chat-backend.vercel.app/api/chat', {
             method: 'POST',
             headers: { 
                 'Content-Type': 'application/json'
